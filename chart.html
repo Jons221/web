@@ -1,18 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <title>Chart</title>
 </head>
+
 <body>
-  <div class="container">
-    <canvas id="myChart"></canvas>
+  <div class="title text-center mb-5">
+    <h1>Top 10 programing Languange</h1>
   </div>
-<script src="chart_1.js"></script>
+  <div>
+    <div class="wrapper chart_no1 ">
+      <div class="container ">
+        <div class="chart-wrapper">
+          <canvas id="myChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <button id="chartDataButton" class="btn-primary ">Tiobe Index</button>
+    </br></br>
+    <div>
+      <div class="border border-dark rounded">
+        <span class="container strong">What Is Pypl Index?</span>
+        <span id="showcontext_pypl" class="fas fa-chevron-down float-right p-1 "></span>
+        <div style="display:none" id="pypl_text" class="border-top container">The PYPL PopularitY of Programming Language Index is created by
+          analyzing how often language tutorials are searched on Google. The index is updated once a month.</div>
+      </div>
+    </div>
+    </br>
+    <div>
+      <div class="border border-dark rounded">
+        <span class="container strong">What Is Tiobe Index?</span>
+        <span id="showcontext_tiobe" class="fas fa-chevron-down float-right p-1 "></span>
+        <div style="display:none" id="tiobe_text" class="border-top container">The PYPL PopularitY of Programming Language Index is created by
+            TIOBE ratings are calculated by counting hits of the most popular search engines. There are 25 search engines that are used to calculate the TIOBE index. The TIOBE Programming Community index is an indicator of the popularity of programming languages. The index started in the year 2001 and updated once a month.
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <script src="chart_1.js"></script>
 </body>
+
 </html>
