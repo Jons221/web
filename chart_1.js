@@ -18,6 +18,7 @@ var myChart_2 = {
 
 var pieChartOptions_1 = {
     responsive: true,
+    dataPointMinWidth: 200,
     title: {
       display: true,
       text: 'Pypl Index',
@@ -50,6 +51,7 @@ var pieChartOptions_1 = {
 
 var pieChartOptions_2 = {
   responsive: true,
+  dataPointMinWidth: 100,
   title: {
     display: true,
     text: 'Tiobe Index',
